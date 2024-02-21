@@ -1,0 +1,118 @@
+/*----------------------GENERELL STYLING FÖR HELA WEBBSIDAN-----------------------*/
+
+body {
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    padding: 40px;
+    background-color: #2a9dca;
+    color: #ffffff;
+}
+
+/* Logotyp */
+.skulptoren-logotype {
+    width: 6%;
+    height: auto;
+}
+
+/* Navigation */
+.navbar {
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-knapp {
+    width: 220pt;
+	height: 20pt;
+    background-color: #ff0000;
+	padding: 8pt;
+	text-align: center;
+	font-size: 20pt;
+}
+
+/*----------------------------STYLING AV LANDNINGSSIDA----------------------------*/
+
+/* SEKTION 1 (Bakgrundsbild) */
+#section-one-indexsite {
+    height: 100vh; /* Viewport height - sektion 1 täcker 100% av skärmen i höjd */
+    background-image: url(bilder/background-image-indexsite.webp);
+    background-position: center; /* Bakgrundsbilden är centrerad inom sektionen */
+    background-repeat: no-repeat; /* Bakgrundsbilden repeteras ej, bara en kopia av den ritas upp */
+    background-size: cover;
+}
+
+/* SEKTION 2 (Gradient) */
+#section-two-indexsite {
+    height: 100vh; /* Viewport height - sektion 1 täcker 100% av skärmen i höjd */
+    background-color: #8b0101;
+    background: linear-gradient(0deg, #8b0101 -20%, #010101 40%); /* deg = degrees/lutning av gradient) */
+}
+
+/*------------------------------STYLING AV STORY-SIDA-----------------------------*/
+
+/*----------------------------STYLING AV BILJETTER-SIDA---------------------------*/
+/* style.css */
+
+/* style.css */
+
+.biljetter.body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.seats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Färg för bokade platser */
+.booked {
+    background-color: #ff0000;
+}
+
+/* Anpassa färg för specifika platser */
+.seat:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+/* Anpassa färg för platser med specifikt pris */
+.seat[data-price="100"] {
+    background-color: #b3e0ff;
+}
+
+/* Anpassa färg för platser med annat pris */
+.seat[data-price="150"] {
+    background-color: #ffcc99;
+}
